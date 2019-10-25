@@ -27,7 +27,7 @@ const myArray = {
   map: function (callback) {
     const mappedNewArray = [];
     this.forEach((value, index) => {
-      let newValue = callback(value, index);
+      const newValue = callback(value, index);
       mappedNewArray.push(newValue);
     });
     return mappedNewArray;
